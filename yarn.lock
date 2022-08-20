@@ -1625,6 +1625,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash@npm:^4.14.184":
+  version: 4.14.184
+  resolution: "@types/lodash@npm:4.14.184"
+  checksum: 6d9a4d67f7f9d0ec3fd21174f3dd3d00629dc1227eb469450eace53adbc1f7e2330699c28d0fe093e5f0fef0f0e763098be1f779268857213224af082b62be21
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*":
   version: 18.7.8
   resolution: "@types/node@npm:18.7.8"
@@ -3989,6 +3996,7 @@ __metadata:
     "@nrwl/tao": ^14.5.8
     "@nrwl/workspace": ^14.5.8
     "@types/jest": 27.4.1
+    "@types/lodash": ^4.14.184
     "@types/node": 16.11.7
     "@typescript-eslint/eslint-plugin": ^5.29.0
     "@typescript-eslint/parser": ^5.29.0
@@ -3997,6 +4005,7 @@ __metadata:
     eslint: ~8.15.0
     eslint-config-prettier: 8.1.0
     jest: 27.5.1
+    lodash: ^4.17.21
     nodemon: ^2.0.19
     nx: 14.5.8
     prettier: ^2.6.2
@@ -5676,7 +5685,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:4.17.21, lodash@npm:^4.7.0":
+"lodash@npm:4.17.21, lodash@npm:^4.17.21, lodash@npm:^4.7.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
