@@ -1,7 +1,6 @@
 {
   "name": "@zeeko/feishu-ops-cli",
-  "version": "1.0.0",
-  "private": false,
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "files": [
     "dist"
