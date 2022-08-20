@@ -8,13 +8,16 @@
       "options": {
         "cwd": "packages/cli",
         "command": "yarn exec feishu-ops"
-      }
+      },
+      "dependsOn": ["build"]
     },
     "build": {
       "executor": "@wanews/nx-esbuild:build",
       "options": {
         "platform": "node",
         "target": "node14",
+        "format": "esm",
+        "bundle": true,
         "outfile": "./packages/cli/dist/bundle.js",
         "entryPoints": ["./packages/cli/src/index.ts"]
       }
@@ -24,6 +27,7 @@
       "options": {
         "platform": "node",
         "target": "node14",
+        "format": "esm",
         "outfile": "./packages/cli/dist/bundle.js",
         "entryPoints": ["./packages/cli/src/index.ts"]
       }

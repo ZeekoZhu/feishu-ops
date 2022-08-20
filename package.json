@@ -19,6 +19,7 @@
     "@nxext/vitest": "^14.0.2",
     "@types/express": "^4.17.13",
     "@types/jest": "27.4.1",
+    "@types/lodash-es": "^4",
     "@types/node": "16.11.7",
     "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
@@ -51,6 +52,7 @@
     "@nestjs/platform-express": "^9.0.0",
     "@types/lodash": "^4.14.184",
     "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.0.0",
     "tslib": "^2.3.0"

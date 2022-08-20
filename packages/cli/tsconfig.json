@@ -1,6 +1,7 @@
 {
   "extends": "../../tsconfig.settings.json",
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "outDir": "./out-tsc",
     "rootDir": "./src",
     "types": [
