@@ -44,10 +44,9 @@
       }
     },
     "test": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "@nxext/vitest:vitest",
       "options": {
-        "command": "npx vitest --run",
-        "cwd": "packages/cli"
+        "command": "run"
       }
     }
   },

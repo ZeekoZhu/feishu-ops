@@ -1,9 +1,7 @@
 import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { chain } from 'lodash';
 import { firstValueFrom, map } from 'rxjs';
-import { URL } from 'url';
 
 interface IAppAuthInfo {
   app_id: string;
@@ -17,12 +15,6 @@ export interface IAccessTokenResp {
   expire: number;
 }
 
-export const getSheetToken = (urlStr: string) => {
-  const url = new URL(urlStr);
-  const sheetId = url.searchParams.get('sheet');
-  const sheetToken = chain(url.pathname).split('/').last().value();
-  return { sheetToken, sheetId };
-};
 
 @Injectable()
 export class FeishuApiService {
