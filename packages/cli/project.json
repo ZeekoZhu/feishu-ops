@@ -1,0 +1,55 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "packages/cli/src",
+  "targets": {
+    "bin": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/cli",
+        "command": "yarn exec feishu-ops"
+      }
+    },
+    "build": {
+      "executor": "@wanews/nx-esbuild:build",
+      "options": {
+        "platform": "node",
+        "target": "node14",
+        "outfile": "./packages/cli/dist/bundle.js",
+        "entryPoints": ["./packages/cli/src/index.ts"]
+      }
+    },
+    "package": {
+      "executor": "@wanews/nx-esbuild:package",
+      "options": {
+        "platform": "node",
+        "target": "node14",
+        "outfile": "./packages/cli/dist/bundle.js",
+        "entryPoints": ["./packages/cli/src/index.ts"]
+      }
+    },
+    "serve": {
+      "executor": "@wanews/nx-esbuild:serve",
+      "options": {
+        "platform": "node",
+        "target": "node14",
+        "outfile": "./packages/cli/dist/bundle.js",
+        "entryPoints": ["./packages/cli/src/index.ts"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["packages/cli/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "npx vitest --run",
+        "cwd": "packages/cli"
+      }
+    }
+  },
+  "tags": []
+}
