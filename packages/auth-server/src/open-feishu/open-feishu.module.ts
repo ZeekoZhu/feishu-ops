@@ -10,7 +10,8 @@ import { FeishuApiMiddleware } from './middleware/feishu-api.middleware';
       envFilePath: ['.env.local'],
     }),
     HttpModule],
-  providers: [FeishuApiService]
+  providers: [FeishuApiService],
+  exports: [FeishuApiService],
 })
 export class OpenFeishuModule implements NestModule {
   configure(consumer: MiddlewareConsumer): any {
