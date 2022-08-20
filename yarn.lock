@@ -2159,6 +2159,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@zeeko/feishu-ops-cli@workspace:packages/cli":
+  version: 0.0.0-use.local
+  resolution: "@zeeko/feishu-ops-cli@workspace:packages/cli"
+  dependencies:
+    "@types/fs-extra": ^9.0.13
+    "@types/lodash": ^4.14.184
+    "@vitest/ui": ^0.22.1
+    axios: ^0.27.2
+    chalk: ^5.0.1
+    commander: ^9.4.0
+    fs-extra: ^10.1.0
+    lodash: ^4.17.21
+    vitest: ^0.22.1
+  bin:
+    feishu-ops: ./dist/bundle.js
+  languageName: unknown
+  linkType: soft
+
 "@zkochan/rimraf@npm:^2.1.2":
   version: 2.1.2
   resolution: "@zkochan/rimraf@npm:2.1.2"
@@ -2998,24 +3016,6 @@ __metadata:
   checksum: a9afaf73f58d1f951fb23742f503631b3cf513f43f4c7acb1b640100eb76bfa16efbcd1994d149ffc6603a6d75dd3d4a516a76f125f90dce437de9b16fd0ee6f
   languageName: node
   linkType: hard
-
-"cli@workspace:packages/cli":
-  version: 0.0.0-use.local
-  resolution: "cli@workspace:packages/cli"
-  dependencies:
-    "@types/fs-extra": ^9.0.13
-    "@types/lodash": ^4.14.184
-    "@vitest/ui": ^0.22.1
-    axios: ^0.27.2
-    chalk: ^5.0.1
-    commander: ^9.4.0
-    fs-extra: ^10.1.0
-    lodash: ^4.17.21
-    vitest: ^0.22.1
-  bin:
-    feishu-ops: ./dist/bundle.js
-  languageName: unknown
-  linkType: soft
 
 "cliui@npm:^7.0.2":
   version: 7.0.4
