@@ -2493,7 +2493,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"axios@npm:0.27.2":
+"axios@npm:0.27.2, axios@npm:^0.27.2":
   version: 0.27.2
   resolution: "axios@npm:0.27.2"
   dependencies:
@@ -2980,6 +2980,7 @@ __metadata:
   dependencies:
     "@types/lodash": ^4.14.184
     "@vitest/ui": ^0.22.1
+    axios: ^0.27.2
     lodash: ^4.17.21
     vitest: ^0.22.1
   bin:

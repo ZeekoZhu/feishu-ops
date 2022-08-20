@@ -35,38 +35,6 @@ export class FeishuApiService {
       );
     return firstValueFrom(resp$);
   }
-
-  // async getSheetContent(docUrl: string): Promise<string[][]> {
-  //   const { sheetToken, sheetId } = getSheetToken(docUrl);
-  //   const accessToken = await this.getTenantToken();
-  //   const url = `https://open.feishu.cn/open-apis/sheets/v2/spreadsheets/${sheetToken}/values/${sheetId}`;
-  //   return firstValueFrom(this.http.get(url, {
-  //     headers: {
-  //       Authorization: `Bearer ${accessToken}`,
-  //     }
-  //   })
-  //     .pipe(
-  //       map(it => (it.data as ISingleRangeResp).data.valueRange.values),
-  //       catchError(err => {
-  //         console.log(err);
-  //         return []
-  //       } )
-  //     ));
-  // }
 }
 
-interface ISingleRangeResp {
-  code: number;
-  data: {
-    spreadsheetToken: string;
-    valueRange: {
-      majorDimension: string;
-      values: string[][];
-      range: string;
-      revision: number
-    };
-    revision: number
-  };
-  msg: string;
-}
 
