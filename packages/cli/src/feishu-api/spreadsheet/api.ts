@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getSheetToken } from './utils';
 
-const apiBaseUrl = `http://localhost:3333`;
+const apiBaseUrl = process.env.AUTH_SERVER || `http://localhost:3333`;
 
 interface ISingleRangeResp {
   code: number;
